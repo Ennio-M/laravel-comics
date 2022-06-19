@@ -1,0 +1,100 @@
+.jumbo{
+    height: 400px;
+    background-image: url(../images/jumbotron.jpg);
+    background-size: cover;
+}
+
+
+
+.cards-container{
+    background-color: #1C1C1C;
+}
+.sections{
+    height: 130px;
+    background-color: #0282F9;
+}
+
+
+
+.container{
+    position: relative;
+}
+
+.series{
+    text-transform: uppercase;
+    background-color: #0282F9;
+    color: white;
+    padding: 6px 16px;
+    font-size: 1.2em;
+    font-weight: 500;
+    position: absolute;
+    top: -4%;
+    left: -1%;
+}
+
+.cards-holder{
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button{
+    text-align: center;
+    width: 100%;
+    a{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        background-color: #0282F9;
+        padding: 6px 40px;
+    }
+}
+
+
+.card{
+    width: calc((100% - 150px) / 6);
+
+    .thumb{
+        height: 160px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+    .description{
+        padding-top: 15px;
+    }
+    h5{
+        color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+
+.sections{
+    .container{
+        display: flex;
+        gap: 20px;
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            width: calc(100% / 5);
+            img{
+                width: 40px;
+            }
+            h4{
+                text-transform: uppercase;
+                color: white;
+                font-weight: normal;
+            }
+        }
+    }
+    .small{
+        width: 30px !important;
+    }
+}
